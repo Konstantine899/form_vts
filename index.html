@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap DaeteTimePicker</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
+    <link rel="stylesheet" href="css/form.css" />
+  </head>
+  <body style="margin: 40px">
+    <div class="container">
+      <div class="row">
+        <div class="form_data col-lg-6 col-md-6 col-sm-6">
+          <h1>Ввод показаний. Узел учета №0146Т</h1>
+          <h2>Дата снятия показаний</h2>
+          <div class="form-group">
+            <div class="input-group date" id="datetimepicker1">
+              <input type="text" class="form-control" />
+              <span class="input-group-addon">
+                <span class="glyphicon-calendar glyphicon"></span>
+              </span>
+            </div>
+          </div>
+
+          <script src="js/jquery-3.2.1.min.js"></script>
+          <script src="js/moment-with-locales.min.js"></script>
+          <script src="js/bootstrap.min.js"></script>
+          <script src="js/bootstrap-datetimepicker.min.js"></script>
+          <script type="text/javascript">
+            $(function () {
+              $('#datetimepicker1').datetimepicker({
+                locale: 'ru',
+                stepping: 10,
+                format: 'DD.MM.YYYY',
+                defaultDate: moment('01.01.2021').format('DD.MM.YYYY'),
+                daysOfWeekDisabled: [0, 6],
+              });
+              $('#datetimepicker2').datetimepicker({
+                locale: 'ru',
+              });
+            });
+          </script>
+
+          <form>
+            <h2>Показания</h2>
+            <div class="form-group">
+              <label for="Q-1">Введите количество тепла Q-1</label>
+              <input
+                type="text"
+                class="form-control"
+                id="Q-1"
+                placeholder="Q-1, Гкал"
+              />
+            </div>
+            <div class="form-group">
+              <label for="Q-2">Введите количество тепла Q-2</label>
+              <input
+                type="text"
+                class="form-control"
+                id="Q-2"
+                placeholder="Q-2, Гкал"
+              />
+            </div>
+            <div class="form-group">
+              <label for="Т-1">Введите температуру теплоносителя Т-1</label>
+              <input
+                type="text"
+                class="form-control"
+                id="Т-1"
+                placeholder="Т-1,°С"
+              />
+            </div>
+            <div class="form-group">
+              <label for="Т-2">Введите температуру теплоносителя Т-2</label>
+              <input
+                type="text"
+                class="form-control"
+                id="Т-2"
+                placeholder="Т-2,°С"
+              />
+            </div>
+            <div class="form-group">
+              <label for="V-1">Введите объем теплоносителя V-1</label>
+              <input
+                type="text"
+                class="form-control"
+                id="V-1"
+                placeholder="V-1, м&#179;"
+              />
+            </div>
+            <div class="form-group">
+              <label for="V-2">Введите объем теплоносителя V-2</label>
+              <input
+                type="text"
+                class="form-control"
+                id="V-2"
+                placeholder="V-2, м&#179;"
+              />
+            </div>
+            <div class="form-group">
+              <label for="M-1">Введите массу теплоносителя M-1</label>
+              <input
+                type="text"
+                class="form-control"
+                id="M-1"
+                placeholder="M-1, Тонны"
+              />
+            </div>
+            <div class="form-group">
+              <label for="M-2">Введите массу теплоносителя M-2</label>
+              <input
+                type="text"
+                class="form-control"
+                id="M-2"
+                placeholder="M-2, Тонны"
+              />
+            </div>
+            <div class="form-group">
+              <label for="work_device"
+                >Время работы счетчика в без аварийном режиме</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="work_device"
+                placeholder="Введите время в часах"
+              />
+            </div>
+            <div class="form-group">
+              <label for="work_device_error"
+                >Время работы счетчика в аварийном режиме</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="work_device_error"
+                placeholder="Введите время в часах"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Примечания</label>
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                placeholder="Введите примечания"
+              ></textarea>
+            </div>
+          </form>
+          <button type="button" class="btn btn-primary">Отправить</button>
+          <button type="button" class="btn btn-danger">Удалить</button>
+        </div>
+        <div class="form_data_information mh-100 col-lg-6 col-md-6 col-sm-6">
+          <h1>Подробная информация</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

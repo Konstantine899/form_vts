@@ -1,0 +1,15 @@
+/* .form-control::-webkit-input-placeholder {
+  font-size: 20px;
+  color: black;
+} */
+.row {
+  outline: 1px solid red;
+  background-color: rgba(0, 0, 255, 0.1);
+}
+
+.form_data {
+  outline: 1px solid purple;
+}
+.form_data_information {
+  outline: 1px solid purple;
+}
