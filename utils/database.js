@@ -1,3 +1,4 @@
+//utils/database.js
 const Sequelize = require('sequelize');
 
 const DB_NAME = 'sampledb';

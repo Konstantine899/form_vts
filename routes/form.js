@@ -9,6 +9,7 @@ router.get('/', (req, res) => {
 
 router.post('/', (req, res) => {});
 
+// изменение
 router.put('/:id', (req, res) => {});
 
 router.delete('/:id', (req, res) => {});
