@@ -28,22 +28,9 @@
           <script src="js/moment-with-locales.min.js"></script>
           <script src="js/bootstrap.min.js"></script>
           <script src="js/bootstrap-datetimepicker.min.js"></script>
-          <script type="text/javascript">
-            $(function () {
-              $('#datetimepicker1').datetimepicker({
-                locale: 'ru',
-                stepping: 10,
-                format: 'DD.MM.YYYY',
-                defaultDate: moment('01.01.2021').format('DD.MM.YYYY'),
-                daysOfWeekDisabled: [0, 6],
-              });
-              $('#datetimepicker2').datetimepicker({
-                locale: 'ru',
-              });
-            });
-          </script>
+          <script src="js/datapicker_function.js"></script>
 
-          <form>
+          <form action="/submit" method="POST" enctype="multipart/form-data">
             <h2>Показания</h2>
             <div class="form-group">
               <label for="Q-1">Введите количество тепла Q-1</label>
@@ -51,6 +38,7 @@
                 type="text"
                 class="form-control"
                 id="Q-1"
+                name="Q-1"
                 placeholder="Q-1, Гкал"
               />
             </div>
@@ -60,6 +48,7 @@
                 type="text"
                 class="form-control"
                 id="Q-2"
+                name="Q-2"
                 placeholder="Q-2, Гкал"
               />
             </div>
@@ -69,6 +58,7 @@
                 type="text"
                 class="form-control"
                 id="Т-1"
+                name="Т-1"
                 placeholder="Т-1,°С"
               />
             </div>
@@ -78,6 +68,7 @@
                 type="text"
                 class="form-control"
                 id="Т-2"
+                name="Т-2"
                 placeholder="Т-2,°С"
               />
             </div>
@@ -87,6 +78,7 @@
                 type="text"
                 class="form-control"
                 id="V-1"
+                name="V-1"
                 placeholder="V-1, м&#179;"
               />
             </div>
@@ -96,6 +88,7 @@
                 type="text"
                 class="form-control"
                 id="V-2"
+                name="V-2"
                 placeholder="V-2, м&#179;"
               />
             </div>
@@ -105,6 +98,7 @@
                 type="text"
                 class="form-control"
                 id="M-1"
+                name="M-2"
                 placeholder="M-1, Тонны"
               />
             </div>
@@ -114,6 +108,7 @@
                 type="text"
                 class="form-control"
                 id="M-2"
+                name="M-2"
                 placeholder="M-2, Тонны"
               />
             </div>
@@ -125,6 +120,7 @@
                 type="text"
                 class="form-control"
                 id="work_device"
+                name="work_device"
                 placeholder="Введите время в часах"
               />
             </div>
@@ -136,6 +132,7 @@
                 type="text"
                 class="form-control"
                 id="work_device_error"
+                name="work_device_error"
                 placeholder="Введите время в часах"
               />
             </div>
@@ -145,18 +142,22 @@
               <textarea
                 class="form-control"
                 id="exampleFormControlTextarea1"
+                name="exampleFormControlTextarea1"
                 rows="3"
                 placeholder="Введите примечания"
               ></textarea>
             </div>
+            <button
+              type="button"
+              class="sendButton btn btn-primary"
+              value="Отправка произошла"
+            >
+              Отправить
+            </button>
           </form>
-          <button type="button" class="btn btn-primary">Отправить</button>
-          <button type="button" class="btn btn-danger">Удалить</button>
-        </div>
-        <div class="form_data_information mh-100 col-lg-6 col-md-6 col-sm-6">
-          <h1>Подробная информация</h1>
         </div>
       </div>
     </div>
+    <script src="./app.js"></script>
   </body>
 </html>
