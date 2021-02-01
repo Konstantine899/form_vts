@@ -9,12 +9,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/api/form', formRoutes);
 
-// app.use((req, res, next) => {
-//   res.sendFile('/index.html');
-// });
-
 app.get((req, res, next) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
+app.post('/', function (req, res) {
+  res.redirect('/api/form');
 });
 
 async function start() {
