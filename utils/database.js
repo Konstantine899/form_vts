@@ -1,7 +1,7 @@
 //utils/database.js
 const Sequelize = require('sequelize');
 
-const DB_NAME = 'sampledb';
+const DB_NAME = 'forms';
 const USER_NAME = 'root';
 const PASSWORD = '4343';
 

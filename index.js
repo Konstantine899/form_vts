@@ -13,13 +13,9 @@ app.get((req, res, next) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-// app.post('/', function (req, res) {
-//   res.redirect('/api/form');
-// });
-
 async function start() {
   try {
-    await sequelize.sync();
+    await sequelize.sync({ force: true });
     app.listen(PORT);
     console.log(`Запущено на порту ${PORT}`);
   } catch (e) {

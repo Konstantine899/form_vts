@@ -65,6 +65,7 @@ const form = sequelize.define('Form', {
     allowNull: true,
     type: Sequelize.INTEGER(11),
   },
+  // timestamp: false,
 });
 
 module.exports = form;
