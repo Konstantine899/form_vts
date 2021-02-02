@@ -13,9 +13,9 @@ app.get((req, res, next) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-app.post('/', function (req, res) {
-  res.redirect('/api/form');
-});
+// app.post('/', function (req, res) {
+//   res.redirect('/api/form');
+// });
 
 async function start() {
   try {
