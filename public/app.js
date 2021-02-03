@@ -3,7 +3,6 @@ const isCheckboxOrRadio = (type) => ['checkbox', 'radio'].includes(type); // п�
 const { form } = document.forms;
 
 function retrieveFormValue(event) {
-  console.log(1, 2, 3);
   event.preventDefault();
 
   const { elements } = form; // получаю элементы из формы
@@ -20,7 +19,7 @@ function retrieveFormValue(event) {
   console.log(values);
   fetch('/api/form', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: JSON.stringify(values),
   });
 }

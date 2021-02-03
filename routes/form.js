@@ -17,7 +17,7 @@ router.get('/', (req, res) => {
 
 router.post('/', async (req, res) => {
   try {
-    console.log(req);
+    console.log(req.body);
     res.json(req.body);
   } catch (e) {
     console.log(e);
