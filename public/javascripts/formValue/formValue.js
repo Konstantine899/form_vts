@@ -16,11 +16,13 @@ function retrieveFormValue(event) {
       values[name] = isCheckboxOrRadio(type) ? checked : value;
     }
   }
-  console.log(values);
-  fetch('/api/form', {
+  console.log(typeof JSON.stringify(values));
+
+  fetch('/form', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(values),
+    // body: new FormData(form),
   });
 }
 

@@ -1,13 +1,17 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap DaeteTimePicker</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
-    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="./stylesheets/datapicker/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="./stylesheets/datapicker/bootstrap-datetimepicker.min.css"
+    />
+    <link rel="stylesheet" href="./stylesheets/form.css" />
+    <link rel="stylesheet" href="./stylesheets/style.css" />
   </head>
   <body style="margin: 40px">
     <div class="container">
@@ -24,13 +28,13 @@
             </div>
           </div>
 
-          <script src="js/jquery-3.2.1.min.js"></script>
-          <script src="js/moment-with-locales.min.js"></script>
-          <script src="js/bootstrap.min.js"></script>
-          <script src="js/bootstrap-datetimepicker.min.js"></script>
-          <script src="js/datapicker_function.js"></script>
+          <script src="./javascripts/datapicker/jquery-3.2.1.min.js"></script>
+          <script src="./javascripts/datapicker/moment-with-locales.min.js"></script>
+          <script src="./javascripts/datapicker/bootstrap.min.js"></script>
+          <script src="./javascripts/datapicker/bootstrap-datetimepicker.min.js"></script>
+          <script src="./javascripts/datapicker/datapicker_function.js"></script>
 
-          <form action="/add" id="form" name="form">
+          <form action="/form" id="form" name="form" method="POST">
             <h2>Показания</h2>
             <div class="form-group">
               <label for="Q-1">Введите количество тепла Q-1</label>
@@ -158,6 +162,6 @@
         </div>
       </div>
     </div>
-    <script src="./app.js"></script>
+    <script src="./javascripts/formValue/formValue.js"></script>
   </body>
 </html>
