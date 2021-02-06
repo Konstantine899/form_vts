@@ -13,5 +13,20 @@
     "express": "~4.16.1",
     "morgan": "~1.9.1",
     "uuid": "^8.3.2"
-  }
+  },
+  "main": "app.js",
+  "devDependencies": {
+    "@types/express": "github:types/npm-express"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Konstantine899/form_vts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Konstantine899/form_vts/issues"
+  },
+  "homepage": "https://github.com/Konstantine899/form_vts#readme",
+  "description": ""
 }
