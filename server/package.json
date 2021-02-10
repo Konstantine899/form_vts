@@ -1,0 +1,34 @@
+{
+  "name": "form-vts",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "morgan": "~1.9.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.5.0",
+    "uuid": "^8.3.2"
+  },
+  "main": "app.js",
+  "devDependencies": {
+    "@types/express": "github:types/npm-express"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Konstantine899/form_vts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Konstantine899/form_vts/issues"
+  },
+  "homepage": "https://github.com/Konstantine899/form_vts#readme",
+  "description": ""
+}
